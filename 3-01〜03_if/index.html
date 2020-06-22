@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3-01_if</title>
+<link href="../_common/images/favicon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="../_common/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>確認ダイアログボックスを表示する</h1>
+<h2>確認ダイアログボックスを使ってみよう</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+<section>
+    <p>ゲームの進行はコンソールで確認</p>
+</section>
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+<p>JavaScript Samples</p>
+</div><!-- /.container -->
+</footer>
+<script>
+'use strict';
+
+if(window.confirm('ゲームスタート！準備はいい？')){
+    console.log('ゲームを開始します');
+}else{
+    console.log('ゲームを終了します');
+}
+
+// 変数
+let answer = window.prompt('ヘルプを見ますか?');
+if(answer === 'yes'){
+    console.log(answer);
+    window.alert('ヘルプデータなし');
+}else if(answer === 'no'){
+    console.log(answer);
+    window.alert('画面に戻る');    
+}else{
+    window.alert('yesかnoを記述してください')
+}
+// console.log(answer);
+// 定数
+// const ansWer = window.prompt('テスト');
+// console.log(ansWer);
+// answer = 'aaa';
+// console.log(answer);
+// ansWer = 'bbb';
+// console.log(ansWer);
+// console.log(answer);
+</script>
+</body>
+</html>

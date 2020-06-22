@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>3-02_let-const</title>
-<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<title>2-04_html</title>
+<link href="../_common/images/favicon.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
-<link href="../../_common/css/style.css" rel="stylesheet">
+<link href="../_common/css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
 <div class="container">
-<h1>入力内容に応じて動作を変更する</h1>
-<h2>クリックされたボタンの結果を変数に保存する</h2>
+<h1>HTMLを書き換える</h1>
+<h2>要素を取得する</h2>
 </div><!-- /.container -->
 </header>
 <main>
 <div class="container">
 <section>
-    <p>ブラウザのコンソールを開きます。</p>
+    <p id='choice'>ここに日付を表示します。</p>
 </section>
 </div><!-- /.container -->
 </main>
@@ -28,10 +28,9 @@
 </div><!-- /.container -->
 </footer>
 <script>
-'use strict';
-
-let answer = window.prompt('ヘルプを見ますか？');
-console.log(answer);
+    'use strict';
+    document.getElementById('choice').textContent = new Date();
+    console.log(document.getElementById('choice').textContent);
 </script>
 </body>
 </html>
