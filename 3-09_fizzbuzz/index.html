@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3-09_fizzbuzz</title>
+<link href="../_common/images/favicon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="../_common/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>FizzBuzz</h1>
+<h2>処理の流れを考えてファンクションを作る</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+<section>
+    
+</section>
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+<p>JavaScript Samples</p>
+</div><!-- /.container -->
+</footer>
+<script>
+'use strict';
+
+// let sun = 1;
+// while (sun <= 30){
+//     if (sun % 15 === 0) {
+//         console.log('FizzBuzz');
+//     }else if (sun % 3 === 0) {
+//         console.log('Fizz');
+//     }else if (sun % 5 === 0) {
+//         console.log('Buzz');
+//     }else{
+//         console.log(sun);
+//     }
+//     sun += 1;
+// }
+
+function fizzbuzz(num) {
+    if (num % 3 === 0 && num % 5 ===0) {
+        return 'FizzBuzz';
+    }else if (num % 3 === 0) {
+        return 'Fizz';
+    }else if (num % 5 === 0) {
+        return 'Buzz';
+    }else{
+        console.log(num);
+    };
+};
+
+let i = 1;
+while (i <= 30){
+    console.log(fizzbuzz(i));
+    i += 1;
+};
+</script>
+</body>
+</html>

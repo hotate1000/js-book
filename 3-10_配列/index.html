@@ -4,21 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>3-10_array</title>
-<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<link href="../_common/images/favicon.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
-<link href="../../_common/css/style.css" rel="stylesheet">
+<link href="../_common/css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
 <div class="container">
 <h1>項目をリスト表示する</h1>
-<h2>配列の各項目をすべて読み取る</h2>
+<h2>配列を作成する</h2>
 </div><!-- /.container -->
 </header>
 <main>
 <div class="container">
 <section>
     <h1>やることリスト</h1>
+    <ul id='list'></ul>
 </section>
 </div><!-- /.container -->
 </main>
@@ -30,9 +31,16 @@
 <script>
 'use strict';
 
-let todo = ['デザインカンプ作成', 'データ整理', '勉強会申し込み', '牛乳買う'];
+let todo = ['デザインカンプ作成','データ整理','勉強会申込み','牛乳を買う'];
+console.log(todo[0])
+console.log(todo)
+console.log(todo[4])
+todo.push('歯医者に行く');
 for(let item of todo) {
+    const li = `<li>${item}</li>`;
     console.log(item);
+    console.log(li);
+    document.getElementById('list').insertAdjacentHTML('beforebegin',li)
 }
 </script>
 </body>
