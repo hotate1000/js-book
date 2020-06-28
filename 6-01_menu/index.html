@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>6-01_menu</title>
-<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<link href="../_common/images/favicon.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
-<link href="../../_common/css/style.css" rel="stylesheet">
+<link href="../_common/css/style.css" rel="stylesheet">
 <style>
 .submenu h3 {
     margin: 0 0 1em 0;
@@ -38,23 +38,23 @@
 <main>
 <div class="container">
 <section>
-    <div class="sidebar">
+    <div class='sidebar'>
         <h2>サポートページ</h2>
-        <div class="submenu">
-            <h3>1. 初めて使うとき</h3>
-            <ul class="hidden">
-                <li><a href="">- 概要</a></li>
-                <li><a href="">- インストールする</a></li>
-                <li><a href="">- アカウントを登録する</a></li>
-                <li><a href="">- アンインストールする</a></li>
+        <div class='submenu'>
+            <h3>1.初めて使うとき</h3>
+            <ul class='hidden'>
+                <li><a href=''>- 概要</a></li>
+                <li><a href=''>- インストールする</a></li>
+                <li><a href=''>- アカウントを登録する</a></li>
+                <li><a href=''>- アンインストールする</a></li>
             </ul>
         </div>
-        <div class="submenu">
-            <h3>2. 基本的な使い方</h3>
-            <ul class="hidden">
-                <li><a href="">- 基本的な操作方法</a></li>
-                <li><a href="">- 元の状態に復元する</a></li>
-                <li><a href="">- 機能拡張プラグインを追加する</a></li>
+        <div class='submenu'>
+            <h3>2.基本的な使い方</h3>
+            <ul class='hidden'>
+                <li><a herf=''>- 基本的な操作方法</a></li>
+                <li><a herf=''>- 元の状態に復元する</a></li>
+                <li><a herf=''>- 機能拡張プラグインを追加する</a></li>
             </ul>
         </div>
     </div>
@@ -66,15 +66,15 @@
 <p>JavaScript Samples</p>
 </div><!-- /.container -->
 </footer>
-<script src="../../_common/scripts/jquery-3.4.1.min.js"></script>
+<script src="../_common/scripts/jquery-3.4.1.min.js"></script>
 <script>
-'use strict';
+    'use strict';
 
-$(document).ready(function() {
-    $('.submenu h3').on('click', function() {
-        $(this).next().toggleClass('hidden');
+    $(document).ready(function(){
+        $('.submenu h3').on('click',function(){
+            $(this).next().toggleClass('hidden');
+        });
     });
-});
 </script>
 </body>
 </html>
