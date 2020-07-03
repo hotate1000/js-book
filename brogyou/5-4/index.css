@@ -1,0 +1,34 @@
+section img {
+  max-width: 100%;
+  border: 1px solid; 
+}
+
+.photo {
+  margin   : 0 auto;
+  max-width: 90%;
+  width    : 300px;
+}
+
+.photos {
+
+}
+
+section ul {
+  display: flex;
+  margin: 0;
+  padding : 0;
+  list-style-type: none;
+}
+
+#bigphoto {
+  width: 100%;
+}
+
+section li {
+  flex: 1 1 auto;
+  margin-right: 8px;
+}
+
+section li:last-of-type {
+  margin-right: 0;
+}
