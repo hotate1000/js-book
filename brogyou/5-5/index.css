@@ -1,0 +1,41 @@
+body {
+  background-color : rgb(180, 255, 255);
+}
+.image_box {
+  text-align       : center;
+}
+#main_image {
+  border           : 1px solid;
+  width            : 300px;
+  max-width        : 100%;
+}
+.toolbar {
+  overflow         : hidden;
+  text-align       : center;
+}
+
+.nav {
+  display          : flex;
+  justify-content  : center;
+  align-items      : center;
+  padding          : 8px 0 16px 0;
+}
+#prev {
+  margin-right     : 0.5rem;
+  width            : 20px;
+  height           : 20px;
+  background       : url(hidari.png) no-repeat;
+  background-size  : contain;
+  cursor           : pointer;
+}
+#page {
+  color            : black;
+}
+#next {
+  margin-left      : 0.5rem;
+  width            : 20px;
+  height           : 20px;
+  background       : url(migi.png) no-repeat;
+  background-size  : contain;
+  cursor           : pointer;
+}
